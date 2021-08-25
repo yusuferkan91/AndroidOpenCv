@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_surface_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/content_frame12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <FrameLayout
+                android:id="@+id/content_fra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/actionbar_opacity"
+                android:layout_above="@id/border_camera"
+                />
+
+            <ImageButton
+                android:id="@+id/flash"
+                android:layout_width="40dp"
+                android:layout_height="43dp"
+                android:layout_alignParentRight="true"
+
+                android:scaleType="fitXY"
+                android:background="@color/transparent"
+                android:textColor="#ffffff"
+                android:textSize="40dp" />
+            <View
+                android:id="@+id/border_camera"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="10"
+                android:background="@drawable/border"
+                />
+            <FrameLayout
+                android:id="@+id/conte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/actionbar_opacity"
+                android:layout_toRightOf="@id/border_camera"
+                android:layout_below="@id/content_fra"
+                android:layout_above="@+id/content_f"
+                />
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/actionbar_opacity"
+                android:layout_toLeftOf="@id/border_camera"
+                android:layout_below="@id/content_fra"
+                android:layout_above="@+id/content_f"
+                />
+            <FrameLayout
+                android:id="@+id/content_f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/actionbar_opacity"
+                android:layout_below="@id/border_camera"
+                />
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_camera_foreground"
+                android:textColor="#ffffff"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
